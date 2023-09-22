@@ -8,18 +8,43 @@
   border-radius: 4px;
 }
 
+
+/** minimize kagi's identity decoration */
 .cloud_1,
-.cloud_2 {
+.cloud_2,
+.search-form .doggo-sit {
   visibility: hidden;
 }
 
+
+/** footer that has an applied hover animation (default: hidden) */
+footer,
 .footer {
-  visibility: hidden;
+  background-color: inherit;
+  border-top: inherit;
 }
 
-footer {
-  visibility: hidden;
+footer .footerInner,
+.footer .footerInner {
+  opacity: 0;
+  transform: translateY(100%);
+  transition: opacity 0.5s, transform 0.5s;
 }
+
+footer:hover .footerInner,
+.footer:hover .footerInner {
+  opacity: 1;
+  transform: translateY(0%);
+}
+
+
+/** The logo displayed when navigating to the title on the search screen */
+.app-logo svg {
+  /** visibility: hidden; */
+  /** width: 0px; */
+  /** height: 0px; */
+}
+
 
 :root {
   background-color: #1a1b26;
@@ -55,12 +80,6 @@ header {
 }
 
 #changelogBtn {
-  visibility: hidden;
-  width: 0px;
-  height: 0px;
-}
-
-.app-logo svg {
   visibility: hidden;
   width: 0px;
   height: 0px;
