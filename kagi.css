@@ -257,6 +257,22 @@ html {
   border: none;
 }
 
+body._0_auto-sug .search_area {
+  border-radius: 4px 4px 4px 4px;
+}
+
+.auto_suggestions.--visible {
+  margin-top: 30px;
+}
+
+#mainContent .auto_suggestions.--visible {
+  margin-top: -45px;
+}
+
+.search-form .auto_suggestions .auto_suggestions_in {
+  border-top: unset;
+}
+
 .auto_suggestions_lenses_edit_box a {
   background-color: #16161e;
 }
